@@ -3,6 +3,7 @@ from telegram import Update, KeyboardButton, ReplyKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes, ConversationHandler
 import random
 from datetime import datetime
+import asyncio
 
 TOKEN: Final = "7133435881:AAEfmGZ9AbFN7LMyIDHkmBGRsi1UQt_1n-0"
 BOT_USERNAME: Final = "@kritobate_bot"
@@ -241,7 +242,7 @@ def main():
     # Polling the bot
 
     print('Polling...')
-    app.run_polling(poll_interval=2)
+    asyncio.run(app.run_polling(poll_interval=2))
 
 main()
 

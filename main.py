@@ -13,11 +13,11 @@ SELECTING_DAY = 1
 # Trivia sample questions
 
 trivia_questions = [
-    {"question": "What is 9 + 10? (think)?", "answer": "21"},
-    {"question": "Who wrote \"Diary of a Wimpy Kid\"?", "answer": "Jeff Kinney"},
+    {"question": "Which Finnish composer has a strong connection to Lahti’s Symphony Orchestra?", "answer": "Sibelius"},
+    {"question": "Lahti was the European Green Capital in which year?", "answer": "2021"},
     {"question": "Where is Lahti located?", "answer": "Finland"},
-    {"question": "Does Lionel Messi play football?", "answer": "Yes"},
-    {"question": "Who is the best Kristian?", "answer": "Lalev"},
+    {"question": "What is the name of the university in Lahti?", "answer": "LUT"},
+    {"question": "Lahti is known for which type of winter sport?", "answer": "Skiing"},
 ]
 
 # Store question and answer
@@ -27,25 +27,51 @@ user_data = {}
 # Event Schedule - Orientation days for SSE students
 
 events = [
-    {"datetime": datetime(2024, 8, 20, 10, 0), "text": "Welcome to Land of the Curious, auditorium 2 or online.\n\nWelcome greetings, introduction to electronic key cards & Meet a Local Friend Programme. - 10:30"},
-    {"datetime": datetime(2024, 8, 20, 10, 30), "text": "Studies @ LUT, auditorium 2 or online.\n\nIntroduction to practicalities of studying and student services at LUT. - 11:30"},
-    {"datetime": datetime(2024, 8, 20, 11, 30), "text": "Campus tour, on campus (tutor informs where to meet).\n\nGetting to know how to find classrooms, services, and hang-around-spots at campus. - 12:30"},
+    {"datetime": datetime(2024, 8, 20, 10, 00), "text": "Welcome to Land of the Curious, auditorium 2 or online. Welcome greetings, introduction to electronic key cards & Meet a Local Friend Programme. - 10:30"},
+    {"datetime": datetime(2024, 8, 20, 10, 30), "text": "Studies @ LUT, auditorium 2 or online. Introduction to practicalities of studying and student services at LUT. - 11:30"},
+    {"datetime": datetime(2024, 8, 20, 11, 30), "text": "Campus tour, on campus (tutor informs where to meet). Getting to know how to find classrooms, services, and hang-around-spots at campus. - 12:30"},
     {"datetime": datetime(2024, 8, 20, 12, 30), "text": "Lunch with tutors. - 13:30"},
-    {"datetime": datetime(2024, 8, 20, 14, 0), "text": "Introduction to Finnish Culture (participation not recommended for those already familiar with Finnish Culture), auditorium 2 or online.\n\nThis introduction helps you to overcome possible culture shock and to understand the Finns around you. - 15:00"},
-    {"datetime": datetime(2024, 8, 21, 9, 0), "text": "Introduction to Student Union and Guilds, auditorium 2 or online.\n\nStudent Union and Guilds play a vital role in Finnish university life. Learn about benefits, support, and activities. - 11:30"},
+    {"datetime": datetime(2024, 8, 20, 14, 00), "text": "Introduction to Finnish Culture (participation not recommended for those already familiar with Finnish Culture), auditorium 2 or online. This introduction helps you to overcome possible culture shock and to understand the Finns around you. - 15:00\n\nAdditional (non-mandatory) events:"},
+    {"datetime": datetime(2024, 8, 20, 16, 00), "text": "Tutor trivia night - M19_A109 & M19_A116. For software Engineering students. - 18:00"},
+
+    {"datetime": datetime(2024, 8, 21, 9, 00), "text": "Introduction to Student Union and Guilds, auditorium 2 or online. Student Union and Guilds play a vital role in Finnish university life. Learn about benefits, support, and activities. - 11:30"},
     {"datetime": datetime(2024, 8, 21, 11, 30), "text": "Lunch with tutors. - 13:00"},
-    {"datetime": datetime(2024, 8, 21, 13, 0), "text": "Group activities with tutors, on campus (tutor informs where to meet).\n\nFun activities to get to know your new study friends. Comfortable clothing recommended. - 15:30"},
-    {"datetime": datetime(2024, 8, 22, 11, 0), "text": "Lunch with tutors. - 12:00"},
-    {"datetime": datetime(2024, 8, 22, 12, 0), "text": "Introduction to Studies, Personal study plan and course enrolments, Auditorium 1.\n\nWith study counsellor Lotta Meriläinen and tutors. - 14:00"},
-    {"datetime": datetime(2024, 8, 22, 14, 30), "text": "Introduction to DD Programs with HEBUT, Auditorium 2. - 15:30"},
-    {"datetime": datetime(2024, 8, 23, 9, 0), "text": "Personal Study Plan Workshop, Course enrolments & Q&A with tutors, M19_D247+D250. - 10:30"},
+    {"datetime": datetime(2024, 8, 21, 13, 00), "text": "Group activities with tutors, on campus (tutor informs where to meet). Fun activities to get to know your new study friends. Comfortable clothing recommended. - 15:30\n\nAdditional (non-mandatory) events:"},
+    {"datetime": datetime(2024, 8, 21, 17, 00), "text": "Grill and Mölkky. - Inner courtyard, Mukkula Campus"},
+
+    {"datetime": datetime(2024, 8, 22, 11, 00), "text": "Lunch with tutors. - 12:00"},
+    {"datetime": datetime(2024, 8, 22, 12, 00), "text": "Introduction to Studies, Personal study plan and course enrolments, Auditorium 1. With study counsellor Lotta Meriläinen and tutors. - 14:00"},
+    {"datetime": datetime(2024, 8, 22, 14, 30), "text": "Introduction to DD Programs with HEBUT, Auditorium 2. - 15:30\n\nAdditional (non-mandatory) events:"},
+    {"datetime": datetime(2024, 8, 22, 16, 00), "text": "Kyykkä - Mukkula sports field"},
+
+    {"datetime": datetime(2024, 8, 23, 9, 00), "text": "Personal Study Plan Workshop, Course enrolments & Q&A with tutors, M19_D247+D250. - 10:30"},
     {"datetime": datetime(2024, 8, 23, 10, 45), "text": "Introduction to the SSE program, M19_D247+D250. - 12:15"},
     {"datetime": datetime(2024, 8, 23, 12, 30), "text": "Lunch with SSE teachers and tutors, M19_D247+D250. - 14:00"},
-    {"datetime": datetime(2024, 8, 23, 14, 0), "text": "Introduction to Software Engineering Department. - 14:45"},
-    {"datetime": datetime(2024, 8, 23, 14, 45), "text": "Games and hangout, M19_D247+D250. - as much as you want"},
-    {"datetime": datetime(2024, 8, 30, 10, 0), "text": "Student Welcome Fair, Event Arena.\n\nCollect services and support providers to help with a smooth start for studies. - 13:00"},
-    {"datetime": datetime(2024, 9, 5, 9, 0), "text": "Newcomers can complete DVV registration on campus.\n\nSee further details in the checklist for new degree students. - 12:00 and 13:00 - 15:30"},
-    {"datetime": datetime(2024, 9, 5, 16, 30), "text": "Welcome Event for international students by City of Lahti, Lahti City Hall (Harjukatu 31, Lahti). - 17:30"}
+    {"datetime": datetime(2024, 8, 23, 14, 00), "text": "Introduction to Software Engineering Department. - 14:45"},
+    {"datetime": datetime(2024, 8, 23, 14, 45), "text": "Games and hangout, M19_D247+D250.\n\nAdditional (non-mandatory) events:"},
+    {"datetime": datetime(2024, 8, 23, 18, 00), "text": "Fresher Appro - 21:00"},
+    {"datetime": datetime(2024, 8, 23, 22, 00), "text": "After party - 04:00"},
+
+
+
+    {"datetime": datetime(2024, 8, 26, 14, 00), "text": "Additional (non-mandatory) event: Beach Party-Fresher Olympics - Uimarannankatu 3, Lahti - 18:00"},
+
+    {"datetime": datetime(2024, 8, 28, 17, 00), "text": "Additional (non-mandatory) events: Laho picnic - 22:00"},
+    {"datetime": datetime(2024, 8, 28, 22, 00), "text": "Piku-vesku after party - 04:00"},
+
+    {"datetime": datetime(2024, 8, 29, 17, 00), "text": "Additional (non-mandatory) events: Basics of Teekkarism - 22:00"},
+
+    {"datetime": datetime(2024, 8, 30, 10, 00), "text": "Student Welcome Fair, Event Arena. Collect services and support providers to help with a smooth start for studies. - 13:00"},
+
+    {"datetime": datetime(2024, 9, 3, 18, 00), "text": "Additional (non-mandatory) event: Fresher Promotion - Ankkuri beach - 21:00"},
+
+    {"datetime": datetime(2024, 9, 4, 16, 00), "text": "Additional (non-mandatory) event: Fuksiaiset - 22:00"},
+
+    {"datetime": datetime(2024, 9, 5, 9, 00), "text": "Newcomers can complete DVV registration on campus. See further details in the checklist for new degree students. - 12:00 and 13:00 - 15:30"},
+    {"datetime": datetime(2024, 9, 5, 16, 30), "text": "Welcome Event for international students by City of Lahti, Lahti City Hall (Harjukatu 31, Lahti). - 17:30"},
+
+    {"datetime": datetime(2024, 9, 7, 17, 00), "text": "Additional (non-mandatory) events:\n\nFresher Sitz - Takojankatu 5 - 21:00"},
+    {"datetime": datetime(2024, 9, 7, 22, 00), "text": "Möysan Musaklubi"}
 ]
 
 # Commands
@@ -165,8 +191,14 @@ async def list_events(update: Update, context: ContextTypes.DEFAULT_TYPE):
         [KeyboardButton("21 August")],
         [KeyboardButton("22 August")],
         [KeyboardButton("23 August")],
+        [KeyboardButton("26 August")],
+        [KeyboardButton("28 August")],
+        [KeyboardButton("29 August")],
         [KeyboardButton("30 August")],
-        [KeyboardButton("5 September")]
+        [KeyboardButton("3 September")],
+        [KeyboardButton("4 September")],
+        [KeyboardButton("5 September")],
+        [KeyboardButton("7 September")]
     ]
     reply_markup = ReplyKeyboardMarkup(keyboard, one_time_keyboard=True, resize_keyboard=True)
     await update.message.reply_text("Please choose a day for the events:", reply_markup=reply_markup)
@@ -180,8 +212,14 @@ async def process_day_selection(update: Update, context: ContextTypes.DEFAULT_TY
         "21 august": datetime(2024, 8, 21),
         "22 august": datetime(2024, 8, 22),
         "23 august": datetime(2024, 8, 23),
+        "26 august": datetime(2024, 8, 26),
+        "28 august": datetime(2024, 8, 28),
+        "29 august": datetime(2024, 8, 29),
         "30 august": datetime(2024, 8, 30),
+        "3 september": datetime(2024, 9, 3),
+        "4 september": datetime(2024, 9, 4),
         "5 september": datetime(2024, 9, 5),
+        "7 september": datetime(2024, 9, 7),
     }
 
     selected_day = update.message.text.strip().lower()
